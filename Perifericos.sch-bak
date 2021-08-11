@@ -737,10 +737,10 @@ F 3 "" H 5250 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R FLASH_nCS_PUR
+L Device:R FLASH_nCS_PUR1
 U 1 1 611609A5
 P 1250 5600
-F 0 "FLASH_nCS_PUR" H 1320 5646 50  0000 L CNN
+F 0 "FLASH_nCS_PUR1" H 1320 5646 50  0000 L CNN
 F 1 "2.2k" H 1320 5555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1180 5600 50  0001 C CNN
 F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW04022K20FKEDC?qs=E3Y5ESvWgWNXmL%252BjgVlsRA%3D%3D" H 1250 5600 50  0001 C CNN
@@ -754,4 +754,68 @@ Wire Wire Line
 Connection ~ 1250 5750
 Text GLabel 1250 5450 1    50   Input ~ 0
 VDDS
+Text GLabel 1100 7300 0    50   Input ~ 0
+FLASH_nCS
+Text GLabel 1100 7450 0    50   Input ~ 0
+FLASH_CLK
+Text GLabel 1100 7600 0    50   Input ~ 0
+FLASH_SDI
+Text GLabel 1100 7750 0    50   Input ~ 0
+FLASH_SDO
+Text GLabel 1350 7300 2    50   Input ~ 0
+GPIO20
+Wire Wire Line
+	1350 7300 1100 7300
+Text GLabel 1350 7450 2    50   Input ~ 0
+GPIO10
+Text GLabel 1350 7750 2    50   Input ~ 0
+GPIO8
+Text GLabel 1350 7600 2    50   Input ~ 0
+GPIO9
+Wire Wire Line
+	1350 7600 1100 7600
+Wire Wire Line
+	1100 7450 1350 7450
+Wire Wire Line
+	1100 7750 1350 7750
+Text GLabel 9950 4400 0    50   Input ~ 0
+IMU_SDA
+Text GLabel 9950 4700 0    50   Input ~ 0
+IMU_SCL
+Text GLabel 9950 5350 0    50   Input ~ 0
+IMU_FSYNC
+Text GLabel 9950 4200 0    50   Input ~ 0
+HALL_SDA
+Text GLabel 9950 4900 0    50   Input ~ 0
+HALL_SCL
+Text GLabel 10150 5350 2    50   Input ~ 0
+GPIO26
+Wire Wire Line
+	10150 5350 9950 5350
+Text GLabel 10550 4300 2    50   Input ~ 0
+GPIO24
+Text GLabel 10550 4800 2    50   Input ~ 0
+GPIO25
+Wire Wire Line
+	9950 4400 10400 4400
+Wire Wire Line
+	9950 4200 10400 4200
+Wire Wire Line
+	10400 4200 10400 4300
+Wire Wire Line
+	10400 4300 10550 4300
+Connection ~ 10400 4300
+Wire Wire Line
+	10400 4300 10400 4400
+Wire Wire Line
+	10550 4800 10400 4800
+Wire Wire Line
+	9950 4700 10400 4700
+Wire Wire Line
+	10400 4700 10400 4800
+Wire Wire Line
+	9950 4900 10400 4900
+Wire Wire Line
+	10400 4900 10400 4800
+Connection ~ 10400 4800
 $EndSCHEMATC

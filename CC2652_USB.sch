@@ -265,4 +265,16 @@ F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW040210K0FKEDC?qs=E3Y5ES
 $EndComp
 Text GLabel 1750 4400 2    50   Input ~ 0
 Vin_CC2652
+Text GLabel 2850 5500 0    50   Input ~ 0
+CP2102_TX
+Text GLabel 2850 5300 0    50   Input ~ 0
+CP2102_RX
+Text GLabel 3200 5300 2    50   Input ~ 0
+GPIO18
+Text GLabel 3200 5500 2    50   Input ~ 0
+GPIO19
+Wire Wire Line
+	3200 5300 2850 5300
+Wire Wire Line
+	2850 5500 3200 5500
 $EndSCHEMATC
