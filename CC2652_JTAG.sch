@@ -113,14 +113,14 @@ F 3 "" H 6400 4150 50  0001 C CNN
 	1    6400 4150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5600 4650 3    50   Input ~ 0
-RESET_N
-Text GLabel 5700 4650 3    50   Input ~ 0
-GPIO17-JTDI
 Text GLabel 5800 4650 3    50   Input ~ 0
-GPIO16-JTDO
+RESET_N
 Text GLabel 5800 3650 1    50   Input ~ 0
-JTAG_TCKC
+GPIO17-JTDI
 Text GLabel 5700 3650 1    50   Input ~ 0
+GPIO16-JTDO
+Text GLabel 5600 3650 1    50   Input ~ 0
+JTAG_TCKC
+Text GLabel 5600 4650 3    50   Input ~ 0
 JTAG_TMSC
 $EndSCHEMATC

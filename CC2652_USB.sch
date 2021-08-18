@@ -118,9 +118,7 @@ F 11 "https://www.arrow.com/en/products/tpd6e004rser/texas-instruments" H 7750 2
 	1    6900 3100
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7000 2100 1    50   Input ~ 0
-USB_D+
-Text GLabel 7100 2100 1    50   Input ~ 0
+Text GLabel 6900 3100 3    50   Input ~ 0
 USB_D-
 $Comp
 L power:GND #PWR?
@@ -156,7 +154,7 @@ Text GLabel 5300 2000 2    50   Input ~ 0
 USB_D+
 Text GLabel 5300 2100 2    50   Input ~ 0
 USB_D-
-Text GLabel 5300 1800 2    50   Input ~ 0
+Text GLabel 5600 1800 2    50   Input ~ 0
 USB_VBUS
 Connection ~ 5000 2400
 $Comp
@@ -269,12 +267,27 @@ Text GLabel 2850 5500 0    50   Input ~ 0
 CP2102_TX
 Text GLabel 2850 5300 0    50   Input ~ 0
 CP2102_RX
-Text GLabel 3200 5300 2    50   Input ~ 0
-GPIO18
 Text GLabel 3200 5500 2    50   Input ~ 0
+GPIO18
+Text GLabel 3200 5300 2    50   Input ~ 0
 GPIO19
 Wire Wire Line
 	3200 5300 2850 5300
 Wire Wire Line
 	2850 5500 3200 5500
+Text GLabel 7100 3100 3    50   Input ~ 0
+USB_D+
+$Comp
+L Device:Ferrite_Bead EMI_VDDS_FILTER?
+U 1 1 61212A5E
+P 5450 1800
+AR Path="/61212A5E" Ref="EMI_VDDS_FILTER?"  Part="1" 
+AR Path="/6112335E/61212A5E" Ref="EMI_VDDS_FILTER_USB1"  Part="1" 
+F 0 "EMI_VDDS_FILTER_USB1" V 5176 1800 50  0000 C CNN
+F 1 "BLM18HE152SN1D " V 5267 1800 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 5380 1800 50  0001 C CNN
+F 3 "https://www.mouser.ca/datasheet/2/281/ENFA0004-1915711.pdf" H 5450 1800 50  0001 C CNN
+	1    5450 1800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

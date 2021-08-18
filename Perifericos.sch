@@ -442,7 +442,7 @@ L Memory_Flash:W25Q32JVZP FLASH_MEM1
 U 1 1 611065E1
 P 1900 5850
 F 0 "FLASH_MEM1" H 2300 6600 50  0000 C CNN
-F 1 "W25Q32JVZP" H 2350 6400 50  0000 C CNN
+F 1 "W25Q64JWZPIM" H 2350 6400 50  0000 C CNN
 F 2 "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm" H 1900 5850 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 1900 5850 50  0001 C CNN
 	1    1900 5850
@@ -564,8 +564,6 @@ Text GLabel 5100 4250 0    50   Input ~ 0
 GPIO22
 Text GLabel 5100 4350 0    50   Input ~ 0
 GPIO24
-Text GLabel 5100 4450 0    50   Input ~ 0
-GPIO10
 Text GLabel 5100 4550 0    50   Input ~ 0
 GPIO21
 Text GLabel 5100 4650 0    50   Input ~ 0
@@ -605,12 +603,6 @@ Text GLabel 7350 3850 0    50   Input ~ 0
 GPIO7
 Text GLabel 7350 3950 0    50   Input ~ 0
 GPIO6
-Text GLabel 7350 4050 0    50   Input ~ 0
-GPIO20
-Text GLabel 7350 4150 0    50   Input ~ 0
-GPIO19
-Text GLabel 7350 4250 0    50   Input ~ 0
-GPIO18
 Text GLabel 7350 4450 0    50   Input ~ 0
 JTAG_TMSC
 Text GLabel 7350 4550 0    50   Input ~ 0
@@ -625,10 +617,6 @@ Text GLabel 7850 4050 2    50   Input ~ 0
 GPIO11
 Text GLabel 7850 4250 2    50   Input ~ 0
 RESET_N
-Text GLabel 7850 4350 2    50   Input ~ 0
-GPIO9
-Text GLabel 7850 4450 2    50   Input ~ 0
-GPIO8
 Text GLabel 7850 4550 2    50   Input ~ 0
 GPIO13
 Text GLabel 7850 4650 2    50   Input ~ 0
@@ -710,7 +698,7 @@ F 1 "SW" V 5295 7030 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_PTS645" H 5250 6900 50  0001 C CNN
 F 3 "https://www.mouser.ca/c/?q=pts645" H 5250 6900 50  0001 C CNN
 	1    5250 6900
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R_RESET1
@@ -766,11 +754,11 @@ Text GLabel 1350 7300 2    50   Input ~ 0
 GPIO20
 Wire Wire Line
 	1350 7300 1100 7300
-Text GLabel 1350 7450 2    50   Input ~ 0
+Text GLabel 1350 7600 2    50   Input ~ 0
 GPIO10
 Text GLabel 1350 7750 2    50   Input ~ 0
 GPIO8
-Text GLabel 1350 7600 2    50   Input ~ 0
+Text GLabel 1350 7450 2    50   Input ~ 0
 GPIO9
 Wire Wire Line
 	1350 7600 1100 7600
@@ -818,4 +806,6 @@ Wire Wire Line
 Wire Wire Line
 	10400 4900 10400 4800
 Connection ~ 10400 4800
+Text GLabel 1950 2600 1    50   Input ~ 0
+VDDS
 $EndSCHEMATC
