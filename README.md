@@ -1,6 +1,6 @@
 # CC2652_KiCAD
 
-PCB con TI CC2652R1 con BLE 5.2, con JTAG.
+PCB con TI CC2652R1 con BLE 5.2 y JTAG.
 
 Comunicacion serial via USB conectado a UART y con perifericos:
 
