@@ -745,13 +745,13 @@ F 3 "~" H 2850 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 7200 3050 7200
+	3300 7200 3150 7200
 Text GLabel 3300 7200 2    50   Input ~ 0
 X48M_N
 Text GLabel 2500 7200 0    50   Input ~ 0
 X48M_P
 Wire Wire Line
-	2500 7200 2750 7200
+	2500 7200 2650 7200
 $Comp
 L power:GND #PWR0111
 U 1 1 610A214E
@@ -782,4 +782,54 @@ U 610C2981
 F0 "Perifericos" 50
 F1 "Perifericos.sch" 50
 $EndSheet
+$Comp
+L Device:C_Small C3(opt)
+U 1 1 6129B392
+P 2650 7300
+F 0 "C3(opt)" H 2558 7254 50  0000 R CNN
+F 1 "4p" H 2558 7345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2650 7300 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 2650 7300 50  0001 C CNN
+	1    2650 7300
+	-1   0    0    1   
+$EndComp
+Connection ~ 2650 7200
+Wire Wire Line
+	2650 7200 2750 7200
+$Comp
+L Device:C_Small C4(opt)
+U 1 1 6129B933
+P 3150 7300
+F 0 "C4(opt)" H 3058 7254 50  0000 R CNN
+F 1 "4p" H 3058 7345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3150 7300 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 3150 7300 50  0001 C CNN
+	1    3150 7300
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 7200
+Wire Wire Line
+	3150 7200 3050 7200
+$Comp
+L power:GND #PWR?
+U 1 1 6129C0C5
+P 3150 7400
+F 0 "#PWR?" H 3150 7150 50  0001 C CNN
+F 1 "GND" H 3155 7227 50  0000 C CNN
+F 2 "" H 3150 7400 50  0001 C CNN
+F 3 "" H 3150 7400 50  0001 C CNN
+	1    3150 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6129C4AE
+P 2650 7400
+F 0 "#PWR?" H 2650 7150 50  0001 C CNN
+F 1 "GND" H 2655 7227 50  0000 C CNN
+F 2 "" H 2650 7400 50  0001 C CNN
+F 3 "" H 2650 7400 50  0001 C CNN
+	1    2650 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
