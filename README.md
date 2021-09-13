@@ -58,5 +58,3 @@ USB Transceiver (CP2102N): (UART)
   
 	Tx: GPIO18
   
-  
-  ##Falta la PCB##
